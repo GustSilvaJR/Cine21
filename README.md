@@ -1,2 +1,2 @@
 # Cine21
-Aplicação Django para criticas a respeito de jogos, series e filmes 
+Uma aplicação voltada para publicação de informações a respeito de games, series, animes e filmes em geral, desenvolvida utilizando o framework django
