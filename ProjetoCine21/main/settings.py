@@ -56,7 +56,7 @@ ROOT_URLCONF = 'main.urls'
 TEMPLATES = [ #Local onde irei colocar dentro de dirs qual template contem todos os templates criados por mim 
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -101,11 +101,16 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = "Cadastro.Usuario"
+
+#LOGIN_REDIRECT_URL = 'ViewCadastrarArtigo'
+#LOGIN_URL = 'ViewCadastrarArtigo'
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'UTC'
 
